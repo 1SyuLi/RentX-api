@@ -1,4 +1,4 @@
-import { CategoriesRepository } from "../../repositories/categoryRepository";
+import { CategoriesRepository } from "../../repositories/CategoryRepository";
 import { ICategoryRepository } from "../../repositories/ICategoryRepository";
 
 

@@ -1,5 +1,5 @@
-import { ImportCategoryController } from "./importCategoryController";
-import { ImportCategoryUseCase } from "./importCategoryUseCase";
+import { ImportCategoryController } from "./ImportCategoryController";
+import { ImportCategoryUseCase } from "./ImportCategoryUseCase";
 
 const importCategoryUseCase = new ImportCategoryUseCase();
 const importCategoryController = new ImportCategoryController(importCategoryUseCase);

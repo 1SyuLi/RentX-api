@@ -1,0 +1,11 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "RentX Api Documentation",
+        "description": "RentX Api Documentation",
+        "version": "1.0.0",
+        "contact": {
+            "email": "ruangoio01@gmai.com"
+        }
+    }
+}

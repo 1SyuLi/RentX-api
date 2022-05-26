@@ -3,20 +3,20 @@ import { ICategoryRepository, ICreateCategoryDTO } from "./interfaces/ICategoryR
 
 
 
-class CategoriesRepository implements ICategoryRepository {
+class CategoryRepository implements ICategoryRepository {
     private categories: Category[];
-    private static INSTANCE: CategoriesRepository;
+    private static INSTANCE: CategoryRepository;
 
     private constructor() {
         this.categories = [];
     }
 
-    public static getInstance(): CategoriesRepository {
-        if (!CategoriesRepository.INSTANCE) {
-            CategoriesRepository.INSTANCE = new CategoriesRepository();
+    public static getInstance(): CategoryRepository {
+        if (!CategoryRepository.INSTANCE) {
+            CategoryRepository.INSTANCE = new CategoryRepository();
         }
 
-        return CategoriesRepository.INSTANCE
+        return CategoryRepository.INSTANCE
     }
 
     create({ name, description }: ICreateCategoryDTO): void {
@@ -42,4 +42,4 @@ class CategoriesRepository implements ICategoryRepository {
 }
 
 
-export { CategoriesRepository };
+export { CategoryRepository };
